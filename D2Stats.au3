@@ -1304,7 +1304,7 @@ func FormatNotifications(byref $asPreNotificationsPool, $bDelayedHideItem)
 		local $bIsMatchByStats = False
 
 		local $asItem = GetItemName($pCurrentUnit)
-		local $asItemName = UBound($asItem) == 3 ? $asItem[2] : ""
+		local $asItemName = UBound($asItem) >= 3 ? $asItem[2] : ""
         local $asItemType = $asItem[1]
         local $asItemStats = ""
         local $iItemColor = $bNotEquipment ? $ePrintOrange : $g_iQualityColor[$iQuality]
